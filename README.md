@@ -50,7 +50,7 @@ curl -u admin:Secr3t@123 'http://localhost:8888/ping?host=1.1.1.1'
 
 Apps Script (manual browser deploy)
 
-1. Open the spreadsheet URL and make a copy (File → Make a copy).
+1. Open this [spreadsheet URL](https://docs.google.com/spreadsheets/d/1RXBmTKeAgYARA-A2ZbOd1up0i3mt8oUVXZr8Rt2Z7dk/edit?usp=sharing) and make a copy (File → Make a copy).
 2. Open Extensions → Apps Script in your copy.
 3. Create script files that match `app-scripts/` (e.g. `Code.gs`, `trigger.gs`, ...) and paste the code.
 4. Save, run a setup function and authorize, then add a time-driven trigger for `monitorAllVPS`.
