@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  ping-server:
+    build: .
+    ports:
+      - "5001:5001"
+    environment:
+      - BASIC_AUTH_ENABLED=false
+      - BASIC_AUTH_USER=admin
+      - BASIC_AUTH_PASS=Secr3t@123
+    cap_add:
+      - NET_RAW
+      - NET_ADMIN
+    restart: unless-stopped
